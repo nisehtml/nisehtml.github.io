@@ -1,0 +1,254 @@
+* {box-sizing: border-box}
+body {
+  font-family: 'Poppins';
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  margin: auto 180px;
+}
+.navbar nav {
+  display: flex;
+}
+.logo{
+  padding: 12px;
+  color: #292929;
+  text-decoration: none;
+  font-size: 24px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  transition: color 0.3s ease;
+  font-family: 'Courier New', Courier, monospace;
+}
+.navbar a {
+  padding: 12px;
+  color: #292929;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #909090;
+}
+
+.navbar a.active {
+  color: #909090;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar nav {
+    margin-top: 10px;
+  }
+
+  .navbar a {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+
+.status{
+  background-color: black; 
+  color: white; 
+  font-size: 12px;
+  text-align: center;  
+  border-radius: 30px; 
+  padding: 5px; 
+  width: 150px;
+
+}
+
+button{
+  background-color: #292929;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  font-family: Poppins;
+}
+button:hover{
+  background-color:#909090;
+}
+h2{
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+
+}
+h5{
+  background-color:#292929;
+  color: white;
+  width: 200px;
+  padding: 10px;
+  text-align: center;
+}
+.icons {
+  display: flex;
+  margin: auto;
+
+}
+.icons > div {
+  padding: 0 10px 0 10px;
+}
+#icon{
+  color:#292929;
+  font-size: 30px;
+  margin: 10px 0;
+}
+#icon:hover{
+  color:#909090;
+}
+.row{
+  display: flex;
+  width: 80%;
+  margin: auto;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.col {
+  flex: 1;
+  padding: 10px;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+.box{
+  text-align: left;
+  margin: 10px 100px;
+  padding: 30px;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+.col-lg-12{
+  flex: 1;
+  padding: 10px;
+  margin: 0 100px;
+}
+.skill-p {
+  width: 1200px;
+  text-align: center;
+  margin: 10px auto;
+  padding: 30px;
+}
+
+.skills{
+  display: flex;
+  margin: 10px auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-2 {
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 30px;
+  margin: 5px;
+  padding: 6px;
+}
+
+@media (max-width: 768px) {
+  .col-2 {
+    width: 100%;
+  }
+}
+footer{
+  text-align: center;
+  background-color: #1a1a1a;
+  color: #909090;
+  padding: 20px;
+}
+footer a{
+  color:white;
+  text-decoration: none;
+}
+
+.skillset-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 100px 0;
+}
+
+.design {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-content {
+  padding: 20px;
+  background: #1f1f1f;
+  border-radius: 5px;
+  color: white;
+  padding: 1.75rem;
+  transition: 0.4s ease;
+  overflow-wrap: break-word !important;
+  margin: 1rem;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+.timeline-component {
+  margin: 0px 20px 20px 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .timeline {
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+  }
+  .timeline-middle {
+    position: relative;
+    background-color:#292929;
+    width: 3px;
+    height: 100%;
+  }
+  .main-middle {
+    opacity: 0;
+  }
+  .timeline-circle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #292929;
+            transform: translateX(-50%);
+  }
+}
