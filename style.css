@@ -3,7 +3,7 @@ body {
   font-family: 'Poppins';
   font-size: 16px;
   margin: 0;
-  padding: 0;
+  padding: 0 50px;
 
 }
 
@@ -11,8 +11,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  margin: auto 180px;
+  padding: 0.5rem;
+  margin: 1rem 1rem;
 }
 .navbar nav {
   display: flex;
@@ -47,23 +47,61 @@ body {
   color: #909090;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
+  body{
+    font-size: 16px;
+  }
   .navbar {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .navbar nav {
-    margin-top: 10px;
+    text-align: center;
+
   }
 
   .navbar a {
     width: 100%;
-    text-align: left;
+  
+  }
+  body h2{
+    font-size: 30px;
+  }
+    img {
+      display: none;
+  }
+  .row {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Stack columns on top of each other */
+  }
+  .col {
+    flex: 100%;
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+  .status {
+    margin: 10px auto;
+  }
+
+  .icons {
+    justify-content: center;
+  
+  }
+  .col-2{
+    display: none;
+  
   }
 }
 
-
+section{
+  margin: 100px 0;
+  align-items: center;
+  justify-content: center;
+}
 .status{
   background-color: black; 
   color: white; 
@@ -89,7 +127,7 @@ button:hover{
 }
 h2{
   font-family: 'Poppins', sans-serif;
-  font-size: 30px;
+  font-size: 65px;
 
 }
 h5{
@@ -97,6 +135,11 @@ h5{
   color: white;
   width: 200px;
   padding: 10px;
+  text-align: center;
+  font-weight: 400;
+}
+.title{
+  font-size: 30px;
   text-align: center;
 }
 .icons {
@@ -109,7 +152,7 @@ h5{
 }
 #icon{
   color:#292929;
-  font-size: 30px;
+  font-size: 2rem;
   margin: 10px 0;
 }
 #icon:hover{
@@ -117,64 +160,75 @@ h5{
 }
 .row{
   display: flex;
-  width: 80%;
-  margin: auto;
-  padding: 30px;
+  max-width: 100%;
+  height: auto;
+  margin: 1rem 1rem;
   justify-content: center;
   align-items: center;
 }
 .col {
   flex: 1;
-  padding: 10px;
+  padding: 0.5rem;
 }
 img {
-  display: block;
-  max-width: 100%;
+  width: 80%;
   height: auto;
   border-radius: 5px;
   margin: 0 auto;
+  float: inline-end;
 }
-.box{
+.box {
   text-align: left;
-  margin: 10px 100px;
+  margin: 10px auto;
   padding: 30px;
   align-items: center;
   background-color: #f2f2f2;
 }
 .col-lg-12{
   flex: 1;
-  padding: 10px;
-  margin: 0 100px;
+  padding: 0.5rem;
+  margin: 1rem 1rem;
 }
 .skill-p {
-  width: 1200px;
+  max-width:  100%;
   text-align: center;
-  margin: 10px auto;
-  padding: 30px;
+  padding: 0.5rem;
+  margin: 1rem 1rem;
 }
 
 .skills{
   display: flex;
-  margin: 10px auto;
   justify-content: center;
   align-items: center;
 }
 
 .col-2 {
-  background-color: black;
-  color: white;
+  background-color: #f2f2f2;
+  color: #292929;
   font-size: 12px;
   text-align: center;
-  border-radius: 30px;
-  margin: 5px;
+  margin: 0.5rem;
   padding: 6px;
 }
-
-@media (max-width: 768px) {
-  .col-2 {
-    width: 100%;
-  }
+.col-2:hover{
+  background-color: #909090;
+  color: white;
 }
+.contact-grid{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.contact-grid > button {
+  padding: 0.5rem;
+  margin: 1.5rem 1rem;
+}
+.contact-grid > button:hover {
+  background-color: #909090;
+}
+
 footer{
   text-align: center;
   background-color: #1a1a1a;
@@ -192,7 +246,6 @@ footer a{
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  padding: 100px 0;
 }
 
 .design {
