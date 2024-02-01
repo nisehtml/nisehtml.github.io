@@ -5,6 +5,9 @@ body {
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 .navbar {
   display: flex;
@@ -208,6 +211,9 @@ h5{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.workexp{
+  margin: 0 0 200px 0; 
 }
 
 .col-2 {
