@@ -3,13 +3,14 @@ body {
   font-family: 'Poppins';
   font-size: 16px;
   margin: 0;
+  padding: 0;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 50px;
+  padding: 0 100px;
   margin: 1rem 1rem;
 }
 .navbar nav {
@@ -17,14 +18,16 @@ body {
 }
 .logo{
   padding: 12px;
-  color: #292929;
+  color: #909090;
   text-decoration: none;
   font-size: 24px;
   text-align: center;
   font-family: 'Poppins', sans-serif;
   font-weight: 900;
   transition: color 0.3s ease;
-  font-family: 'Courier New', Courier, monospace;
+}
+.logo:hover{
+  color: #292929;
 }
 .navbar a {
   padding: 12px;
@@ -43,6 +46,16 @@ body {
 
 .navbar a.active {
   color: #909090;
+}
+.status{
+  background-color: black; 
+  color: white; 
+  font-size: 14px;
+  text-align: center;  
+  border-radius: 30px; 
+  padding: 5px; 
+  width: 150px;
+
 }
 
 @media screen and (max-width: 768px) {
@@ -91,25 +104,21 @@ body {
   }
   .col-2{
     display: none;
-  
+  }
+  .lp, .workexp, .skillsets, .skillset-timeline{
+    margin: 0;
+    padding: 0;
+  }
+  .contact-grid{
+    flex-direction: column;
   }
 }
 
 section{
   margin: 100px 0;
-  padding: 0 10px;
+  padding: 0 100px;
   align-items: center;
   justify-content: center;
-}
-.status{
-  background-color: black; 
-  color: white; 
-  font-size: 14px;
-  text-align: center;  
-  border-radius: 30px; 
-  padding: 5px; 
-  width: 150px;
-
 }
 
 button{
@@ -124,9 +133,9 @@ button{
 button:hover{
   background-color:#909090;
 }
-h2{
+.hero-h2{
   font-family: 'Poppins', sans-serif;
-  font-size: 65px;
+  font-size: 45px;
 
 }
 h5{
@@ -140,6 +149,7 @@ h5{
 .title{
   font-size: 30px;
   text-align: center;
+  margin: 35px 0;
 }
 .icons {
   display: flex;
@@ -169,12 +179,12 @@ h5{
   flex: 1;
   padding: 0.5rem;
 }
-img {
+.hero-img {
   width: 80%;
   height: auto;
   border-radius: 5px;
   margin: 0 auto;
-  float: inline-start;
+  float: inline-end;
 }
 .box {
   text-align: left;
@@ -185,13 +195,12 @@ img {
 }
 .col-lg-12{
   flex: 1;
-  padding: 0.5rem;
+  padding: 0 auto;
   margin: 1rem 1rem;
 }
 .skill-p {
   max-width:  100%;
   text-align: center;
-  padding: 0.5rem;
   margin: 1rem 1rem;
 }
 
@@ -218,7 +227,8 @@ img {
   align-items: center;
   text-align: center;
   justify-content: center;
-  margin: 0 auto;
+  margin: 30px auto;
+  gap: 20px;
 }
 .contact-grid > button {
   padding: 0.5rem;
@@ -275,7 +285,7 @@ footer a{
   text-decoration: none;
 }
 
-.skillset-section {
+.skillset-timeline {
   display: flex;
   flex-direction: column;
   align-items: center;
