@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 * {box-sizing: border-box}
 body {
-  font-family: 'Poppins';
+  font-family: 'Inter';
   font-size: 16px;
   margin: 0;
   padding: 0;
@@ -21,11 +23,11 @@ html {
 }
 .logo{
   padding: 12px;
-  color: #909090;
+  color: #292929;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 30px;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inconsolata', monospace;
   font-weight: 900;
   transition: color 0.3s ease;
 }
@@ -36,10 +38,10 @@ html {
   padding: 12px;
   color: #292929;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 30px;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
+  font-family: 'Inconsolata', monospace;
+  font-weight: 900;
   transition: color 0.3s ease;
 }
 
@@ -61,83 +63,31 @@ html {
 
 }
 
-@media screen and (max-width: 768px) {
-  body{
-    font-size: 16px;
-  }
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .navbar nav {
-    text-align: center;
-
-  }
-
-  .navbar a {
-    width: 100%;
-  
-  }
-  body h2{
-    font-size: 30px;
-  }
-    img {
-      display: none;
-  }
-  .row {
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column; /* Stack columns on top of each other */
-  }
-  .col {
-    flex: 100%;
-    text-align: center;
-    padding: 0.5rem;
-  }
-
-  .status {
-    margin: 10px auto;
-  }
-
-  .icons {
-    justify-content: center;
-  
-  }
-  .col-2{
-    display: none;
-  }
-  .lp, .workexp, .skillsets, .skillset-timeline{
-    margin: 0;
-    padding: 0;
-  }
-  .contact-grid{
-    flex-direction: column;
-  }
-}
-
 section{
   margin: 100px 0;
   padding: 0 100px;
   align-items: center;
   justify-content: center;
-}
 
-button{
+}
+.button-drk{
   background-color: #292929;
   color: white;
   border: none;
-  padding: 10px;
+  padding: 10px 20px;
   width: 200px;
   text-align: center;
-  font-family: Poppins;
+  font-size: 14px;
+  text-decoration: none;
 }
-button:hover{
+.button-drk:hover{
   background-color:#909090;
+  color: white;
+  text-decoration: none;
 }
+
 .hero-h2{
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inconsolata', monospace;
   font-size: 45px;
 
 }
@@ -150,22 +100,26 @@ h5{
   font-weight: 400;
 }
 .title{
+  font-family: 'Inconsolata', monospace;
   font-size: 30px;
+  font-weight: 900;
   text-align: center;
   margin: 35px 0;
 }
+
 .icons {
   display: flex;
-  margin: auto;
+  margin: 20px 0;
+  gap: 10px;
 
 }
-.icons > div {
-  padding: 0 10px 0 10px;
+span{
+  color:#f99c9c;
 }
+
 #icon{
   color:#292929;
   font-size: 2rem;
-  margin: 10px 0;
 }
 #icon:hover{
   color:#909090;
@@ -178,16 +132,27 @@ h5{
   justify-content: center;
   align-items: center;
 }
+.row-abt{
+  display: flex;
+  max-width: 100%;
+  height: auto;
+  margin: 1rem 1rem;
+  justify-content: center;
+  align-items: center;
+}
 .col {
   flex: 1;
   padding: 0.5rem;
+}
+.col p{
+  margin: 30px 0;
 }
 .hero-img {
   width: 80%;
   height: auto;
   border-radius: 5px;
   margin: 0 auto;
-  float: inline-end;
+  margin: 0 auto
 }
 .box {
   text-align: left;
@@ -200,6 +165,9 @@ h5{
   flex: 1;
   padding: 0 auto;
   margin: 1rem 1rem;
+}
+.skillset-timeline p{
+  font-family: 'Inconsolata', monospace;
 }
 .skill-p {
   max-width:  100%;
@@ -247,16 +215,20 @@ h5{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  margin: 40px auto;
+  width: 80%;
 }
-
 .project {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 300px;
-  background-color: #f2f2f2;
+  max-width: 80%;
+  height: auto;
+  background-color: #fffcfc;
   border-radius: 10px;
+  -webkit-box-shadow: 2px 3px 12px 1px rgba(214,214,214,0.69);
+  -moz-box-shadow: 2px 3px 12px 1px rgba(214,214,214,0.69);
+  box-shadow: 2px 3px 12px 1px rgba(214,214,214,0.69);
   overflow: hidden;
   margin: 10px;
 }
@@ -279,6 +251,9 @@ h5{
 .project p {
   margin-bottom: 20px;
 }
+.abt-contact{
+  margin: 0 auto;
+}
 footer{
   text-align: center;
   background-color: #1a1a1a;
@@ -287,6 +262,7 @@ footer{
 }
 
 footer a{
+  font-family: 'Inconsolata', monospace;
   color:white;
   text-decoration: none;
 }
@@ -330,7 +306,93 @@ footer a{
 .timeline-component {
   margin: 0px 20px 20px 20px;
 }
+@media screen and (max-width: 768px) {
+  body{
+    font-size: 16px;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
 
+  .navbar nav {
+    text-align: center;
+
+  }
+
+  .navbar a, .logo {
+    font-size: 24px;
+    width: 100%;
+
+  
+  }
+  body h2{
+    font-size: 30px;
+  
+  }
+  .hero-h2{
+    font-size: 40px;
+  }
+  .row {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    margin: -100px 0;
+  }
+
+  .row-abt{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: -100px 0 0 0;
+  }
+  .abt-contact{
+    align-items: center;
+    margin: 0 auto;
+  }
+  .col {
+    flex: 100%;
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+  .status {
+    margin: 10px auto;
+  }
+
+  .icons {
+    justify-content: center;
+  
+  }
+  .col-2{
+    display: none;
+  }
+  .lp, .workexp, .skillsets, .skillset-timeline, .about{
+    margin: 100px 0;
+    padding: 0;
+  }
+  .contact-grid{
+    flex-direction: column;
+  }
+  .skillset-timeline{
+    margin-bottom: 50px;
+}
+.project-container {
+  flex-direction: column;
+  width: 80%;
+}
+
+.project {
+  max-width: 80%;
+}
+
+
+
+}
 @media screen and (min-width: 768px) {
   .timeline {
     display: grid;
