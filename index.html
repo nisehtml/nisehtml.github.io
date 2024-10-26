@@ -50,7 +50,7 @@
       </div>
 
       <div class="col">
-        <img class="hero-img" src="src/2.png" alt="img">
+        <img class="hero-img" src="src/img-2.jpg" alt="img">
       </div>
     </div>
 
@@ -239,7 +239,45 @@
   </section>
   </section>
 
+  <!--MY WORKS-->
+  <section class="myworks">
+    <h2 class="title"><span>&lt;</span>my featured works<span>&frasl;&gt;</span></h2>
+    <div class="col-lg-12">
+      <div class="box2">
+        <a href="ngowebsite.html"><img class="featimg" src="src/ngowebsite.png" alt="ngowebsitepreview"></a>
+        <div class="container">
+          <a class="button-drk" href="ngowebsite.html">PROJECT DETAILS</a>
+      </div> 
+  </div>
+  </div>
+  </section>
+    
+    
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>document.addEventListener('DOMContentLoaded', function () {
+    const titles = document.querySelectorAll('.accordion-title');
+
+    titles.forEach(title => {
+        title.addEventListener('click', function () {
+            const content = this.nextElementSibling;
+
+            // Toggle display of the content
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+
+            // Optionally, you can close other accordions when one is opened
+            titles.forEach(t => {
+                if (t !== this) {
+                    t.nextElementSibling.style.display = "none";
+                }
+            });
+        });
+    });
+});</script>
 
 </body>
 <footer>Designed by <a href="index.html">&lt;Denise T.&frasl;&gt;</a></footer>
